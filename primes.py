@@ -2,6 +2,8 @@
 """ENTER YOUR SOLUTION HERE!"""
 
 def is_prime(number):
+    if number == 1:
+        return True
 
     for i in range (number):
         if (number % i == 0 and i != 1 or i!= number):
@@ -12,7 +14,7 @@ def get_primes(number):
     list = []
     for i in range(number):
         if(is_prime(i) == True):
-            list.insert(i)
+            list.append(i)
     return list
 
 
