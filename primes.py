@@ -3,7 +3,7 @@
 
 def is_prime(number):
     if number == 1:
-        return True
+        return False
 
     for i in range (number):
         if (number % i == 0 and i != 1 or i!= number):
