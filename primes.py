@@ -13,7 +13,7 @@ def is_prime(number):
 def get_primes(number):
 
     list = []
-    i = 0
+    i = 1
 
     while(True):
     # for i in range(number):
