@@ -4,9 +4,10 @@
 def is_prime(number):
     if number == 1:
         return True
-
-    for i in range (1,number+1):
-        if (number % i == 0 and i != 1 or i!= number):
+    temp = 0
+    while(temp != number):
+        temp+=1
+        if (number % temp == 0 and temp != 1 or temp!= number):
             return False
     return True
 
