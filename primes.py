@@ -3,7 +3,7 @@
 
 def is_prime(number):
     if number == 1:
-        return False
+        return True
 
     for i in range (number):
         if (number % i == 0 and i != 1 or i!= number):
@@ -19,7 +19,9 @@ def get_primes(number):
     # for i in range(number):
         if(len(list) == number):
             break
-        if(is_prime(i) == True):
+        if(i == 1):
+            i+=1
+        elif(is_prime(i) == True):
             list.append(i)
             i+= 1
 
