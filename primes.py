@@ -32,11 +32,11 @@ def primes(number_of_primes):
     if number_of_primes < 1:
         raise ValueError('Work with Positive Numbers Only')
     else:
-        list = []
+        # list = []
         # temp = 0
         # while(len(list) != number_of_primes):
-        list.append(get_primes(number_of_primes))
+        # list.append(get_primes(number_of_primes))
             # temp += 1
             
-        return list
+        return get_primes(number_of_primes)
     
