@@ -20,7 +20,8 @@ def get_primes(number):
             break
         elif(is_prime(i) == True):
             list.append(i)
-            i+= 1
+        
+        i+= 1
 
     return list
 
