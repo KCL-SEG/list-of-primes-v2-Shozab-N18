@@ -2,13 +2,11 @@
 """ENTER YOUR SOLUTION HERE!"""
 
 def is_prime(number):
-    if number == 1:
-        return True
-    temp = 0
+    temp = 1
     while(temp != number):
-        temp+=1
         if (number % temp == 0 and temp != 1 or temp!= number):
             return False
+        temp+=1
     return True
 
 def get_primes(number):
